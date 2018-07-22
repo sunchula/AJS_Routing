@@ -1,0 +1,13 @@
+		<h1 align="center"> {{message}}</h1>
+		
+		<form action="#/auth" method="post" id="loginForm" ng-controller="authController" ng-submit="login()" name="myform">
+                <label>Username</label>
+                <div>
+                	<input type="text" ng-model="username" ng-trim="false" tabindex="1" />
+                </div>
+            	<label>Password</label>
+                <div>
+                	<input type="password"  ng-model="pwd" ng-trim="false" tabindex="2" />
+                </div><br>
+                <input type="submit" tabindex="3" value="Login" id="requestType" name="requestType"  title="Login" />
+        </form>
